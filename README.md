@@ -4,7 +4,7 @@
 
 </div>
 
-JobPortal is a Node.js-based application that allows users to submit job applications with their CVs and retrieve submitted applications. The project uses Express.js, MongoDB, and Multer for file uploads.
+JobPortal is a React.js and Node.js-based application that allows users to submit job applications with their CVs and retrieve submitted applications. The project uses Express.js, MongoDB, and Multer for file uploads.
 
 ## Table of Contents
 
