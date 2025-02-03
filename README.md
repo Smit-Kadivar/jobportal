@@ -10,7 +10,7 @@ JobPortal is a Node.js-based application that allows users to submit job applica
 
 - [Introduction](#introduction)
 - [Features](#features)
-- [Technologies Used](#technolgoiesused)
+- [Technologies](#technolgoies)
 - [Installation](#installation)
 - [API Endpoints](#apiendpoints)
 - [License](#license)
@@ -91,7 +91,7 @@ The server will run on http://localhost:3000
 ```
 ### Download Uploaded CV
 - **Endpoint:** `GET /api/form/:id/download`
-Description: Downloads the CV of a submitted application.
+- **Description:** Downloads the CV of a submitted application.
 - **Example:**
 ```sh
 curl -O http://localhost:4000/api/form/65a4bc123f1b6a7891/download
