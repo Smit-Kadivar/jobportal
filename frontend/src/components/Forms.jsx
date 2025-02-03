@@ -25,7 +25,7 @@ const Forms = () => {
     }
   
     try {
-      const response = await axios.post('http://localhost:3000/api/form', formData, {
+      const response = await axios.post('https://job-portal-md6f.onrender.com/api/form', formData, {
         headers: { 'Content-Type': 'multipart/form-data' }
       });
       message.success('Form submitted successfully!');
