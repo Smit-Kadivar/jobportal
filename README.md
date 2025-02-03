@@ -21,19 +21,18 @@ Job Portal is a web application built using React.js for the frontend and Node.j
 
 ## Features
 
-Features
-Submit job application forms with CV uploads.
-Store application data in MongoDB.
-Download uploaded CVs.
-Fetch all job applications.
+- Submit job application forms with CV uploads.
+- Store application data in MongoDB.
+- Download uploaded CVs.
+- Fetch all job applications.
 
 ## Technologies Used
 
-React.js
-Node.js
-Express.js
-MongoDB (Mongoose)
-Multer (for file uploads)
+- React.js
+- Node.js
+- Express.js
+- MongoDB (Mongoose)
+- Multer (for file uploads)
 
 ## Installation
 
@@ -58,17 +57,18 @@ Multer (for file uploads)
 
    ```bash
    npm start
-
-   The server will run on http://localhost:3000
    ```
 
+The server will run on http://localhost:3000
+   
 ## API Endpoints 
 
-Submit Application Form (with CV upload)
-Endpoint: POST /api/form
-Description: Submits a job application with a CV.
-Headers: Content-Type: multipart/form-data
-Body Parameters:
+### Submit Application Form (with CV upload)
+- **Endpoint:** `POST /api/form`
+- **Description:** Submits a job application with a CV.
+- **Headers:** `Content-Type: multipart/form-data`
+- **Body Parameters:**
+```json
 {
   "name": "John Doe",
   "email": "johndoe@example.com",
@@ -80,21 +80,27 @@ Body Parameters:
   "expectedCTC": "60000",
   "experienceYearsandMonths": "5 years"
 }
-File: uploadCV (CV in PDF/DOC format)
-Response:
+```
+- **File:** `uploadCV` (CV in PDF/DOC format)
+- **Response:**
+```json
 {
   "response": { "_id": "<application_id>" },
   "message": "Form Submitted successfully"
 }
-Download Uploaded CV
-Endpoint: GET /api/form/:id/download
+```
+### Download Uploaded CV
+- **Endpoint:** `GET /api/form/:id/download`
 Description: Downloads the CV of a submitted application.
-Example:
+- **Example:**
+```sh
 curl -O http://localhost:4000/api/form/65a4bc123f1b6a7891/download
-Get All Applications
-Endpoint: GET /api/form
-Description: Fetches all job applications.
-Response:
+```
+### Get All Applications
+- **Endpoint:** `GET /api/form`
+- **Description:** Fetches all job applications.
+- **Response:**
+```json
 [
   {
     "_id": "65a4bc123f1b6a7891",
@@ -109,6 +115,7 @@ Response:
     "experienceYearsandMonths": "5 years"
   }
 ]
+```
 
 ## License
 
