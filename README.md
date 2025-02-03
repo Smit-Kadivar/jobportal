@@ -12,7 +12,7 @@ JobPortal is a Node.js-based application that allows users to submit job applica
 - [Features](#features)
 - [Technologies](#technolgoies)
 - [Installation](#installation)
-- [API Endpoints](#apiendpoints)
+- [API-Endpoints](#apiendpoints)
 - [License](#license)
 
 ## Introduction
@@ -26,7 +26,7 @@ Job Portal is a web application built using React.js for the frontend and Node.j
 - Download uploaded CVs.
 - Fetch all job applications.
 
-## Technologies Used
+## Technologies 
 
 - React.js
 - Node.js
@@ -61,7 +61,7 @@ Job Portal is a web application built using React.js for the frontend and Node.j
 
 The server will run on http://localhost:3000
    
-## API Endpoints 
+## API-Endpoints 
 
 ### Submit Application Form (with CV upload)
 - **Endpoint:** `POST /api/form`
