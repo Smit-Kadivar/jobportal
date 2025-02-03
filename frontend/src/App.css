@@ -1,0 +1,19 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  
+}
+
+/* Customizing the uploaded file text and icons */
+.custom-upload .ant-upload-list-item-name {
+  color: black !important;
+}
+
+.custom-upload .ant-upload-list-item-remove {
+  color: black !important;
+}
+
+.custom-upload .ant-upload-list-item {
+  color: black !important;
+}
